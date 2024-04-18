@@ -87,10 +87,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<Feed> call, Response<Feed> response) {
                         if(response.isSuccessful()){
-
                             Feed feed=response.body();
                             txtultrasonico.setText(feed.getValue());
-
                         }
 
                     }
