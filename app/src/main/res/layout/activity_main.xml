@@ -9,11 +9,28 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
-    <TextView
-        android:id="@+id/txtTemperatura"
+
+    <Button
+        android:id="@+id/btnultrasonico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0º C"
+        android:text="Medir"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/boton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txtultrasonico"
+        app:layout_constraintVertical_bias="0.9"
+        />
+
+
+    <TextView
+        android:id="@+id/txtultrasonico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0CM"
         android:textSize="70sp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +50,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTemperatura"
+        app:layout_constraintTop_toBottomOf="@+id/txtultrasonico"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
